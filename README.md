@@ -77,7 +77,7 @@ Follow the steps to submit your project in the hackathon:
 1. **Navigate to the Issues Tab:** Visit the **Issues** tab in the repository and click on **New Issue**
    <img width="939" alt="image" src="https://user-images.githubusercontent.com/31401437/170703361-5194ebb5-6938-4a25-abef-25ea4c60ae0b.png">
 
-2. **Select Hackathon Submission Template:** Find the **Hackathon Submission** option and click on **Get Started** 
+2. **Select Hackathon Submission:** Find the **Hackathon Submission** option and click on **Get Started** 
    <img width="951" alt="image" src="https://user-images.githubusercontent.com/31401437/170703875-ec6a0737-f910-4734-9c5b-cb359d12ac91.png">
 
 3. **Fill in Your Submission Details:** Complete all required fields in the submission form
