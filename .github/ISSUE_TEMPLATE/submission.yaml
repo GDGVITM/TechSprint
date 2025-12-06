@@ -1,7 +1,7 @@
 name: Hackathon Submission
 description: Add a hackathon submission
 title: "[Project]: "
-labels: ["submission", "needreview"]
+labels: ["submission", "need-review"]
 body:
   - type: markdown
     attributes:
@@ -11,16 +11,16 @@ body:
     id: name
     attributes:
       label: Name
-      description: Enter your full name
-      placeholder: Aditya Oberai
+      description: Enter your team name
+      placeholder: GDG-VITM
     validations:
       required: true
   - type: input
     id: email
     attributes:
-      label: Email Address
+      label: Email Address (Leader)
       description: Enter your email address
-      placeholder: foo@bar.com
+      placeholder: opensourcelead@gdgvitm.tech
     validations:
       required: true
   - type: input
@@ -28,31 +28,39 @@ body:
     attributes:
       label: Email Addresses of Team Members
       description: Enter the email addresses of you team members separated by commas (if you have any)
-      placeholder: foo1@bar.com, foo2@bar.com, foo3@bar.com,...
+      placeholder: teammate@gdgvitm.tech, teammate@gdgvitm.tech, teammate@gdgvitm.tech
     validations:
       required: false
   - type: textarea
     id: description
     attributes:
       label: Project Description
-      description: What have you built during the hackathon?
+      description: What have you built during the hackathon? (100 words)
       placeholder: The project I created is...
     validations:
       required: true
-  - type: textarea
-    id: inspiration
-    attributes:
-      label: Inspiration behind the Project
-      description: What is the story behind this project? Why did you choose to work on this specific idea?
-      placeholder: The reason I chose this idea/project was...
-    validations:
-      required: true
+  # - type: textarea
+  #   id: inspiration
+  #   attributes:
+  #     label: Inspiration behind the Project
+  #     description: What is the story behind this project? Why did you choose to work on this specific idea?
+  #     placeholder: The reason I chose this idea/project was...
+  #   validations:
+  #     required: true
   - type: textarea
     id: tech-stack
     attributes:
       label: Tech Stack
-      description: How have you built this project? Mention the technologies/methods/platforms you used to build your project
-      placeholder: The technologies I used...
+      description: How have you built this project? (Mandatory use of one google tech)
+      placeholder: The technologies I used... (List google technologies first then mention others)
+    validations:
+      required: true
+  - type: textarea
+    id: google-ai-tools
+    attributes:
+      label: AI Stack
+      description: List of google ai tools integrated
+      placeholder: The ai tools i used... 
     validations:
       required: true
   - type: dropdown
@@ -61,28 +69,41 @@ body:
       label: Hackathon Track
       description: What hackathon track are you opting in?
       options:
-        - Track 1
-        - Track 2
-        - Track 3
-        - Track 4
-    validations:
-      required: true
-  - type: input
-    id: project-link
-    attributes:
-      label: Project Repo
-      description: Share a public repo link of your project
-      placeholder: https://github.com/code-capture/CodeCapture-Xamarin
+        - Open Innovation
     validations:
       required: true
   - type: input
     id: demo-link
     attributes:
-      label: Demo Video/Photos
-      description: Share a publicly visible demo video/photos link of your project
+      label: Three-minute Demo Video
+      description: Share a publicly visible demo video link of your project
       placeholder: https://www.youtube.com/watch?v=9IBaX1avYWc
     validations:
-      required: false
+      required: true
+  - type: input
+    id: ppt-link
+    attributes:
+      label: Presentation
+      description: Share a publicly visible presentation link of your project (You can use anything for ppt creation)
+      placeholder: ppt-link
+    validations:
+      required: true
+  - type: input
+    id: mvp-link
+    attributes:
+      label: mvp
+      description: Share a publicly visible link of your MVP. (use Vercel, Netlify, Render,etc)
+      placeholder: yourproject.domain
+    validations:
+      required: true
+  - type: input
+    id: github-repo
+    attributes:
+      label: Github Repository link
+      description: Share a publicly visible link of your project
+      placeholder: https://github.com/GDGVITM/gdgvit-web
+    validations:
+      required: true
   - type: textarea
     id: anything-else
     attributes:
