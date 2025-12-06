@@ -91,7 +91,7 @@ body:
   - type: input
     id: mvp-link
     attributes:
-      label: mvp
+      label: Minimum Viable Product
       description: Share a publicly visible link of your MVP. (use Vercel, Netlify, Render,etc)
       placeholder: yourproject.domain
     validations:
